@@ -70,72 +70,69 @@ import java.util.Scanner;
 						marks = marks + 1;}
 				}
 				break;
-		     	case "4":
-		    	for(  i=1; i<=n;i++ ) {
-
-							c = (int) (Math.random() * 38 + 2);
-												int answer = b - c ;
-												System.out.print("Q" + i + ":" + b + "*" + c +"=");
-												userAnswer = x.nextInt();
-												if (userAnswer == answer){
+				case "4":
+				for(  i=1; i<=n;i++ ) {
+					c = (int) (Math.random() * 38 + 2);
+					int answer = b - c ;
+					System.out.print("Q" + i + ":" + b + "*" + c +"=");
+					userAnswer = x.nextInt();
+					if (userAnswer == answer){
 						marks = marks + 1;}
 					}
 					break;
-			   case "5":
-		       for( i=1; i<=n;i++ ) {
-				   	temp = (int) (Math.random() * 5);
-				   	switch (temp){
-				   		 case '1':
-					 					for(  i=1; i<=n;i++ ) {
-					 					 b = (int) (Math.random() * 50 + 1);
-					 					 c = (int) (Math.random() * 50 + 1);
-					 					int answer = b + c;
-					 					System.out.print("Q" + i + ":" + b + "+" + c +"=");
-					 					 userAnswer = x.nextInt();
-					 					if (userAnswer == answer){
-					 						marks = marks + 1;}
-					 				}
-					 				break;
-					 				case '2':
-					 				for(  i=1; i<=n;i++ ) {
-					 					 b = (int) (Math.random() * 9 + 1);
-					 					 c = (int) (Math.random() * 9 + 1);
-					 					int answer = b * c ;
-					 					System.out.print("Q" + i + ":" + b + "*" + c +"=");
-					 					userAnswer = x.nextInt();
-					 					if (userAnswer == answer){
-					 						marks = marks + 1;}
-					 					}
-					 					break;
-					 				case '3':
-					 				for(  i=1; i<=n;i++ ) {
-					 					do{
-					 					   b = (int) (Math.random() * 98 + 1);
-					 					   c = (int) (Math.random() * 98 + 1);
-					 					}while ( c < b );
-					 					int answer = b - c ;
-					 					System.out.print("Q" + i + ":" + b + "*" + c +"=");
-					 					userAnswer = x.nextInt();
-					 					if (userAnswer == answer){
-					 						marks = marks + 1;}
-					 				}
-					 				break;
-					 		     	case '4':
-					 		    	for(  i=1; i<=n;i++ ) {
-
-					 							c = (int) (Math.random() * 38 + 2);
-					 												int answer = b - c ;
-					 												System.out.print("Q" + i + ":" + b + "*" + c +"=");
-					 												userAnswer = x.nextInt();
-					 												if (userAnswer == answer){
-					 						marks = marks + 1;}
-					 					}
-					 					break;}
+			       case "5":
+			       for( i=1; i<=n;i++ ) {
+					temp = (int) (Math.random() * 5);
+					switch (temp){
+				   	 case '1':
+						for(  i=1; i<=n;i++ ) {
+							 b = (int) (Math.random() * 50 + 1);
+					 		 c = (int) (Math.random() * 50 + 1);
+					 	         int answer = b + c;
+					 		 System.out.print("Q" + i + ":" + b + "+" + c +"=");
+					 		 userAnswer = x.nextInt();
+					 		 if (userAnswer == answer){
+					 		 	marks = marks + 1;}
+					 		}
+					 		break;
+					case '2':
+						for(  i=1; i<=n;i++ ) {
+						 	b = (int) (Math.random() * 9 + 1);
+							c = (int) (Math.random() * 9 + 1);
+					 		int answer = b * c ;
+					 		System.out.print("Q" + i + ":" + b + "*" + c +"=");
+					 		userAnswer = x.nextInt();
+					 		if (userAnswer == answer){
+					 			marks = marks + 1;}
+					 		}
+					 		break;
+					case '3':
+						for(  i=1; i<=n;i++ ) {
+							do{
+							   b = (int) (Math.random() * 98 + 1);
+							   c = (int) (Math.random() * 98 + 1);
+							}while ( c < b );
+							int answer = b - c ;
+							System.out.print("Q" + i + ":" + b + "*" + c +"=");
+							userAnswer = x.nextInt();
+							if (userAnswer == answer){
+								marks = marks + 1;}
+							}
+							break;
+				   	case '4':
+					    	for(  i=1; i<=n;i++ ) {
+							c = (int) (Math.random() * 38 + 2);
+							int answer = b - c ;
+							System.out.print("Q" + i + ":" + b + "*" + c +"=");
+							userAnswer = x.nextInt();
+							if (userAnswer == answer){
+		 						marks = marks + 1;}
+	 					}
+	 					break;}
 									}
-			 case "9":
+				 case "9":
 					System.out.print("Good Bye!!");
 					break;}
-
 			System.out.println("You've answered" + n + "question");
 			System.out.println(marks + "of them are correct");
 			System.out.println("And your mark is" + percent + "%");
